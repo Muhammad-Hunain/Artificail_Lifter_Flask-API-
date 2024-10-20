@@ -28,8 +28,11 @@ y = df['PROD PATH']
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
+@app.route('/')
+def home():
+    return render_template('index.html')
 
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
     input_data = pd.DataFrame([data])
