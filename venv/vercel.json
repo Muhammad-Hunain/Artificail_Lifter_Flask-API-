@@ -10,7 +10,13 @@
       {
         "src": "/(.*)",
         "dest": "app.py"
+      },
+
+      {
+        "src": "/predict",
+        "dest": "app.py"
       }
+
     ]
   }
   
