@@ -28,6 +28,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 
+
 @app.route('/', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
