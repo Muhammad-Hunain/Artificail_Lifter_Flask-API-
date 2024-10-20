@@ -30,7 +30,7 @@ X_scaled = scaler.fit_transform(X)
 
 @app.route('/')
 def home():
-    print('done...')
+    print('return "Welcome to Artificial Lifter API"')
     
 
 @app.route('/predict', methods=['POST'])
