@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict": {"origins": "http://localhost:5173"}})
+CORS(app)
 
 
 df = pd.read_excel('DATA_ALMODEL.xlsx') 
