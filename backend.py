@@ -30,7 +30,8 @@ X_scaled = scaler.fit_transform(X)
 
 @app.route('/')
 def home():
-    return predict()
+    print('done...')
+    
 
 @app.route('/predict', methods=['POST'])
 def predict():
